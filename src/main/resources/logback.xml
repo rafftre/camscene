@@ -1,0 +1,16 @@
+<configuration>
+
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%date %level [%thread] %logger{10} %message%n</pattern>
+        </encoder>
+    </appender>
+
+    <logger name="it.rafftre.camscene" level="INFO"/>
+
+    <root>
+        <level value="WARN"/>
+        <appender-ref ref="STDOUT"/>
+    </root>
+
+</configuration>
